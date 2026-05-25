@@ -1,0 +1,500 @@
+aid: eyevinn-technology
+name: Eyevinn Technology
+description: >-
+  Eyevinn Technology is a Stockholm, Sweden based video streaming consultancy
+  and open source company specializing in cloud-native video infrastructure,
+  HLS and MPEG-DASH packaging, FAST channels, WebRTC ingest (WHIP/WHEP),
+  server-side ad insertion (SSAI), broadcast intercom, and player analytics.
+  The company operates one of the largest video-focused open source portfolios
+  on GitHub (300+ repositories across the Eyevinn and EyevinnOSC orgs) and runs
+  Eyevinn Open Source Cloud (OSC), a managed multi-tenant SaaS platform that
+  packages 180+ open source projects (databases, media tools, developer tools,
+  AI runtimes, productivity apps) into one-click deployments with a token-based
+  consumption model, a Personal Access Token (PAT) authenticated REST API, and
+  client SDKs for TypeScript, Go, and Terraform. Eyevinn shares OSC revenue
+  with the maintainers of the open source projects hosted on the platform,
+  positioning OSC as a "Builder Economy" distribution channel for open source
+  rather than a vendor-lock-in PaaS.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/eyevinn-technology/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.19'
+kind: opensource
+tags:
+  - Ad Insertion
+  - Broadcast Intercom
+  - Channel Engine
+  - CMAF
+  - DASH
+  - FAST Channels
+  - FFmpeg
+  - HLS
+  - Live Streaming
+  - Media Over QUIC
+  - Open Source
+  - Open Source Cloud
+  - OSC
+  - Player Analytics
+  - REST
+  - SRT
+  - SSAI
+  - Sweden
+  - Transcoding
+  - Video Infrastructure
+  - VOD2Live
+  - WebRTC
+  - WHEP
+  - WHIP
+apis:
+  - aid: eyevinn-technology:osc-rest-api
+    name: Eyevinn Open Source Cloud REST API
+    description: >-
+      The Eyevinn Open Source Cloud (OSC) REST API is the management plane for
+      provisioning and operating service instances on the OSC platform. The API
+      uses Personal Access Tokens (PATs) issued from app.osaas.io and a custom
+      `x-pat-jwt: Bearer <PAT>` header to obtain short-lived Service Access
+      Tokens (SATs) per service from `https://token.svc.prod.osaas.io/servicetoken`.
+      Once a SAT is obtained, callers create, list, and remove instances of
+      any of the 180+ services on OSC (PostgreSQL, FFmpeg, Encore, Shaka
+      Packager, ClickHouse, Owncast, Gitea, Grafana, n8n, MinIO, and many
+      more). Workspace, billing, and custom application ("MyApps") management
+      are also exposed. Eyevinn publishes first-party client SDKs in
+      TypeScript (`@osaas/client-core`, `@osaas/client-services`,
+      `@osaas/client-transcode`) and Go (`EyevinnOSC/client-go`), plus a
+      Terraform provider and a GitHub Action.
+    humanURL: https://docs.osaas.io/osaas-api-docs/docs/index.html
+    baseURL: https://api.osaas.io
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Open Source Cloud
+      - OSC
+      - Management
+      - REST
+    properties:
+      - type: Documentation
+        url: https://docs.osaas.io/osaas-api-docs/docs/index.html
+      - type: APIReference
+        url: https://docs.osaas.io/osaas-api-docs/docs/index.html
+      - type: GettingStarted
+        url: https://docs.osaas.io
+      - type: Authentication
+        url: https://docs.osaas.io/osaas-api-docs/docs/index.html
+      - type: SDK
+        url: https://github.com/EyevinnOSC/client-ts
+      - type: SDK
+        url: https://github.com/EyevinnOSC/client-go
+      - type: CLI
+        url: https://www.npmjs.com/package/@osaas/cli
+      - type: TerraformProvider
+        url: https://github.com/EyevinnOSC/terraform-provider-osc
+      - type: GitHubAction
+        url: https://github.com/EyevinnOSC/action
+      - type: MCPServer
+        url: https://github.com/EyevinnOSC/mcp-server
+    x-features:
+      - One-Click Open Source Service Deployment
+      - 180+ Managed Services Catalog
+      - Personal Access Token Authentication
+      - Per-Service Service Access Tokens
+      - Workspace and Billing Isolation
+      - Custom Application Hosting (MyApps)
+      - Token-Based Consumption Metering
+      - Multi-Region Hosting (US and Sweden)
+      - Revenue Sharing With Open Source Creators
+      - Terraform and GitHub Actions Integration
+    x-use-cases:
+      - Deploy PostgreSQL, ClickHouse, or Valkey without managing infrastructure
+      - Spin up Owncast, SRS, or Restreamer for live video
+      - Run FFmpeg, Encore, or Shaka Packager as a managed transcoding service
+      - Host Gitea, Grafana, or n8n for internal developer workflows
+      - Provision per-tenant SaaS stacks via Terraform
+      - Broker AI agent access to open source tools via MCP
+  - aid: eyevinn-technology:channel-engine
+    name: Eyevinn Channel Engine
+    description: >-
+      Channel Engine is an open source JavaScript/TypeScript library for
+      producing 24/7 HLS FAST (Free Ad-Supported Streaming Television) linear
+      channels from already-transcoded HLS VOD assets using VOD2Live
+      technology. It supports personalized per-viewer channels, live stream
+      mixing, Redis/Valkey high availability, WebVTT subtitles, and beta DRM
+      encryption. The engine can run standalone via Docker or as a managed
+      service on Eyevinn Open Source Cloud.
+    humanURL: https://github.com/Eyevinn/channel-engine
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Channel Engine
+      - FAST Channels
+      - HLS
+      - Linear TV
+      - VOD2Live
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/channel-engine
+      - type: License
+        url: https://github.com/Eyevinn/channel-engine/blob/master/LICENSE
+        x-license: Apache-2.0
+    x-features:
+      - VOD2Live Linear Channels
+      - Personalized Channels
+      - Live Stream Mixing
+      - WebVTT Subtitle Support
+      - DRM Encryption (Beta)
+      - Redis/Valkey High Availability
+    x-use-cases:
+      - Run 24/7 HLS FAST channels from a VOD library
+      - Produce per-viewer personalized linear streams
+      - Mix scheduled VOD with live events
+  - aid: eyevinn-technology:whip-whep
+    name: Eyevinn WHIP and WHEP Modules
+    description: >-
+      Open source TypeScript implementations of the IETF WebRTC HTTP Ingestion
+      Protocol (WHIP) and WebRTC HTTP Egress Protocol (WHEP). Used to ingest
+      and distribute low-latency WebRTC media over standard HTTP signaling.
+    humanURL: https://github.com/Eyevinn/whip
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Low Latency
+      - WebRTC
+      - WHEP
+      - WHIP
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/whip
+    x-features:
+      - WHIP Ingest Endpoint
+      - WHEP Egress Endpoint
+      - HTTP Signaling for WebRTC
+    x-use-cases:
+      - Ingest contribution feeds over WebRTC
+      - Distribute sub-second WebRTC playback
+  - aid: eyevinn-technology:player-analytics
+    name: Eyevinn Player Analytics Specification (EPAS)
+    description: >-
+      EPAS is an open specification and SDK suite for collecting video player
+      analytics in real time across web and native players. Eyevinn maintains
+      the client SDK for web (`player-analytics-client-sdk-web`) and an event
+      sink that can be self-hosted or run on Open Source Cloud.
+    humanURL: https://github.com/Eyevinn/player-analytics-specification
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - EPAS
+      - Player Analytics
+      - Video Analytics
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/player-analytics-specification
+      - type: SDK
+        url: https://github.com/Eyevinn/player-analytics-client-sdk-web
+    x-features:
+      - Open Player Analytics Event Schema
+      - Web Client SDK
+      - Self-Hostable Event Sink
+    x-use-cases:
+      - Collect player QoE metrics without vendor lock-in
+      - Stream analytics events to a custom data lake
+  - aid: eyevinn-technology:intercom
+    name: Eyevinn Open Intercom
+    description: >-
+      Open Intercom is a low-latency, web-based VoIP broadcast intercom system
+      built on WebRTC. It is composed of `intercom-manager` (the server and
+      management API) and `intercom-frontend` (the browser-based talkback
+      client). Designed for live production environments as an open source
+      alternative to traditional broadcast intercom hardware.
+    humanURL: https://github.com/Eyevinn/intercom-manager
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Broadcast
+      - Intercom
+      - Live Production
+      - VoIP
+      - WebRTC
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/intercom-manager
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/intercom-frontend
+    x-features:
+      - WebRTC Low-Latency Audio
+      - Browser-Based Client
+      - Multi-Channel Talkback
+    x-use-cases:
+      - Replace hardware intercom in live broadcast
+      - Coordinate remote production crews
+  - aid: eyevinn-technology:srt-whep
+    name: Eyevinn SRT to WHEP Bridge
+    description: >-
+      A Rust service that ingests SRT (Secure Reliable Transport) contribution
+      feeds and re-publishes them as WebRTC playback streams via WHEP, enabling
+      sub-second latency playback of SRT contributions in any modern browser.
+    humanURL: https://github.com/Eyevinn/srt-whep
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Contribution
+      - SRT
+      - WebRTC
+      - WHEP
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/srt-whep
+    x-features:
+      - SRT Ingest
+      - WHEP Egress
+      - Sub-Second Latency Playback
+    x-use-cases:
+      - Preview SRT contribution feeds in-browser
+      - Bridge legacy SRT workflows to WebRTC distribution
+  - aid: eyevinn-technology:media-supply-orchestrator
+    name: Eyevinn Media Supply Orchestrator
+    description: >-
+      Open source TypeScript framework for orchestrating media supply chain
+      workflows — ingest, transcoding, packaging, QC, and distribution — across
+      cloud-native components. Pairs with the Eyevinn Open Source Cloud
+      catalogue so each step can be a managed OSC service.
+    humanURL: https://github.com/Eyevinn/media-supply-orchestrator
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - Media Supply Chain
+      - Orchestration
+      - Workflows
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/media-supply-orchestrator
+    x-features:
+      - Workflow Orchestration
+      - Pluggable Step Adapters
+      - OSC Integration
+    x-use-cases:
+      - Stitch ingest, transcode, package, and publish steps
+      - Coordinate hybrid on-prem and OSC workflows
+  - aid: eyevinn-technology:moq-tools
+    name: Eyevinn Media Over QUIC (MoQ) Tools
+    description: >-
+      A suite of experimental tools tracking the IETF Media Over QUIC working
+      group, including `moqlivemock` (a Go publisher simulator) and
+      `warp-player` (a CMAF media player over MoQ transport).
+    humanURL: https://github.com/Eyevinn/moqlivemock
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    tags:
+      - CMAF
+      - Media Over QUIC
+      - MoQ
+      - QUIC
+      - Warp
+    properties:
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/moqlivemock
+      - type: GitHubRepository
+        url: https://github.com/Eyevinn/warp-player
+    x-features:
+      - MoQ Publisher Simulator
+      - Warp Transport Player
+      - CMAF over MoQ
+    x-use-cases:
+      - Prototype MoQ-based live distribution
+      - Test MoQ interop against a reference publisher
+common:
+  - type: Website
+    url: https://www.eyevinn.se/
+  - type: ProductWebsite
+    url: https://www.osaas.io/
+  - type: Documentation
+    url: https://docs.osaas.io/
+  - type: APIReference
+    url: https://docs.osaas.io/osaas-api-docs/docs/index.html
+  - type: Console
+    url: https://app.osaas.io/
+  - type: Console
+    url: https://app.se.osaas.io/
+  - type: SignUp
+    url: https://app.osaas.io/
+  - type: Login
+    url: https://app.osaas.io/
+  - type: ServiceCatalog
+    url: https://www.osaas.io/catalog
+  - type: Pricing
+    url: https://www.osaas.io/pricing
+  - type: StatusPage
+    url: https://app.osaas.io/status
+  - type: GitHub
+    url: https://github.com/Eyevinn
+  - type: GitHubOrganization
+    url: https://github.com/EyevinnOSC
+  - type: Slack
+    url: https://slack.osaas.io
+  - type: CommunityForum
+    url: https://github.com/EyevinnOSC/community/discussions
+  - type: Blog
+    url: https://eyevinntechnology.medium.com/
+  - type: DeveloperBlog
+    url: https://dev.to/video
+  - type: Email
+    url: mailto:osc@eyevinn.se
+  - type: ContactEmail
+    url: mailto:info@eyevinn.se
+  - type: SDK
+    url: https://github.com/EyevinnOSC/client-ts
+  - type: SDK
+    url: https://github.com/EyevinnOSC/client-go
+  - type: CLI
+    url: https://www.npmjs.com/package/@osaas/cli
+  - type: TerraformProvider
+    url: https://github.com/EyevinnOSC/terraform-provider-osc
+  - type: GitHubAction
+    url: https://github.com/EyevinnOSC/action
+  - type: MCPServer
+    url: https://github.com/EyevinnOSC/mcp-server
+  - type: VSCodeExtension
+    url: https://github.com/EyevinnOSC/vscode-chat-extension
+  - type: Examples
+    url: https://github.com/EyevinnOSC/solutions
+  - type: Onboarding
+    url: https://github.com/EyevinnOSC/onboarding
+  - type: Features
+    data:
+      - name: Builder Economy Consultancy
+        description: >-
+          Outcome-based video streaming engineering services delivered by
+          Stockholm-based experts rather than billable hours.
+      - name: Open Source Cloud (OSC)
+        description: >-
+          Managed multi-tenant SaaS hosting 180+ unmodified open source
+          services with one-click deployment and a token-based consumption
+          model.
+      - name: Personal Access Token API
+        description: >-
+          REST API authenticated via PAT JWTs from app.osaas.io that mint
+          per-service Service Access Tokens for fine-grained authorization.
+      - name: Polyglot Client SDKs
+        description: >-
+          First-party SDKs in TypeScript and Go, plus a Terraform provider
+          and a GitHub Action for CI/CD integration.
+      - name: Model Context Protocol Server
+        description: >-
+          OSC ships an MCP server so AI agents can browse the catalog and
+          provision open source services on a developer's behalf.
+      - name: Revenue Sharing With Maintainers
+        description: >-
+          OSC shares platform revenue with the upstream open source authors
+          whose projects are hosted on the cloud.
+      - name: FAST Channel Engine
+        description: >-
+          VOD2Live engine producing 24/7 personalized HLS linear channels
+          from an existing VOD library.
+      - name: WebRTC Contribution and Distribution
+        description: >-
+          WHIP/WHEP modules, SRT-to-WHEP bridge, and the Open Intercom
+          system cover the WebRTC ingest and distribution surface.
+      - name: Player Analytics Specification
+        description: >-
+          Open EPAS event schema and SDKs for vendor-neutral video QoE
+          analytics.
+      - name: Media Over QUIC Tooling
+        description: >-
+          Reference publishers, players, and simulators tracking the IETF
+          MoQ working group's evolving transport.
+  - type: UseCases
+    data:
+      - name: Linear FAST Channel Production
+        description: >-
+          Spin up 24/7 ad-supported linear channels from a VOD catalog using
+          Channel Engine, either self-hosted or managed on OSC.
+      - name: Low-Latency WebRTC Distribution
+        description: >-
+          Use WHIP/WHEP and the SRT-to-WHEP bridge to deliver sub-second
+          contribution and playback experiences.
+      - name: Browser-Based Broadcast Intercom
+        description: >-
+          Replace hardware intercom panels in live production with the
+          Open Intercom WebRTC system.
+      - name: Managed Open Source PaaS
+        description: >-
+          Use OSC to provision PostgreSQL, ClickHouse, Owncast, Gitea, n8n,
+          Grafana, and dozens of other open source services without DevOps.
+      - name: AI Agent Driven DevOps
+        description: >-
+          Expose OSC to Claude, Copilot, and other LLM agents via the MCP
+          server and VS Code Chat extension.
+      - name: Vendor-Neutral Player Analytics
+        description: >-
+          Adopt EPAS to ship player QoE telemetry to a self-controlled sink
+          rather than a closed analytics vendor.
+      - name: Media Supply Chain Orchestration
+        description: >-
+          Compose ingest, transcode, package, and distribute steps with the
+          Media Supply Orchestrator framework.
+  - type: Integrations
+    data:
+      - name: Terraform
+        description: >-
+          Official Terraform provider (terraform-provider-osc) lets users
+          declare OSC service instances as infrastructure-as-code.
+      - name: GitHub Actions
+        description: >-
+          Official GitHub Action provisions OSC service instances from CI
+          pipelines.
+      - name: Model Context Protocol
+        description: >-
+          MCP server exposes OSC catalog and provisioning tools to AI
+          agents over the MCP standard.
+      - name: VS Code Copilot Chat
+        description: >-
+          OSC Architect VS Code extension integrates OSC into Copilot Chat
+          sessions.
+      - name: FFmpeg
+        description: >-
+          FFmpeg is offered as a first-class managed service in the OSC
+          catalog.
+      - name: Shaka Packager
+        description: >-
+          Google's Shaka Packager is available as a managed OSC service
+          for HLS/DASH packaging.
+      - name: Owncast
+        description: >-
+          The Owncast self-hosted streaming server is a managed service in
+          the OSC catalog.
+      - name: PostgreSQL
+        description: >-
+          PostgreSQL is one of many managed database services on OSC.
+      - name: Redis / Valkey
+        description: >-
+          Valkey (the open source Redis fork) and Redis-compatible engines
+          are available as managed services and used by Channel Engine for
+          HA.
+      - name: ClickHouse
+        description: >-
+          ClickHouse is offered as a managed OLAP database service on OSC.
+      - name: n8n
+        description: >-
+          n8n workflow automation is available as a managed OSC service.
+      - name: Grafana
+        description: >-
+          Grafana dashboards can be deployed on OSC in a single click.
+      - name: Gitea
+        description: >-
+          Self-hosted Git via Gitea is part of the OSC developer-tools
+          catalog.
+      - name: Nextcloud
+        description: >-
+          Nextcloud is offered as a managed productivity service on OSC.
+  - type: Solutions
+    data:
+      - name: Streaming Engineering Services
+        description: >-
+          Outcome-based consulting on cloud-native video infrastructure,
+          packaging, ad insertion, and live production.
+      - name: Open Source Cloud Subscription
+        description: >-
+          Tiered token-based plans (Basic free, Personal EUR 15/mo,
+          Professional EUR 69/mo) for self-service open source deployment.
+      - name: Liivo No-Code AI App Deployment
+        description: >-
+          AI-powered companion product that turns plain-language prompts
+          into deployed OSC-hosted applications.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
