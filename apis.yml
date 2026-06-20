@@ -18,7 +18,7 @@ description: >-
 type: Index
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: >-
   https://raw.githubusercontent.com/api-evangelist/eyevinn-technology/refs/heads/main/apis.yml
 created: '2026-05-25'
@@ -69,7 +69,7 @@ apis:
       Terraform provider and a GitHub Action.
     humanURL: https://docs.osaas.io/osaas-api-docs/docs/index.html
     baseURL: https://api.osaas.io
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Open Source Cloud
       - OSC
@@ -125,7 +125,7 @@ apis:
       encryption. The engine can run standalone via Docker or as a managed
       service on Eyevinn Open Source Cloud.
     humanURL: https://github.com/Eyevinn/channel-engine
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Channel Engine
       - FAST Channels
@@ -156,7 +156,7 @@ apis:
       Protocol (WHIP) and WebRTC HTTP Egress Protocol (WHEP). Used to ingest
       and distribute low-latency WebRTC media over standard HTTP signaling.
     humanURL: https://github.com/Eyevinn/whip
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Low Latency
       - WebRTC
@@ -180,7 +180,7 @@ apis:
       the client SDK for web (`player-analytics-client-sdk-web`) and an event
       sink that can be self-hosted or run on Open Source Cloud.
     humanURL: https://github.com/Eyevinn/player-analytics-specification
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - EPAS
       - Player Analytics
@@ -206,7 +206,7 @@ apis:
       client). Designed for live production environments as an open source
       alternative to traditional broadcast intercom hardware.
     humanURL: https://github.com/Eyevinn/intercom-manager
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Broadcast
       - Intercom
@@ -232,7 +232,7 @@ apis:
       feeds and re-publishes them as WebRTC playback streams via WHEP, enabling
       sub-second latency playback of SRT contributions in any modern browser.
     humanURL: https://github.com/Eyevinn/srt-whep
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Contribution
       - SRT
@@ -256,7 +256,7 @@ apis:
       cloud-native components. Pairs with the Eyevinn Open Source Cloud
       catalogue so each step can be a managed OSC service.
     humanURL: https://github.com/Eyevinn/media-supply-orchestrator
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Media Supply Chain
       - Orchestration
@@ -278,7 +278,7 @@ apis:
       group, including `moqlivemock` (a Go publisher simulator) and
       `warp-player` (a CMAF media player over MoQ transport).
     humanURL: https://github.com/Eyevinn/moqlivemock
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - CMAF
       - Media Over QUIC
