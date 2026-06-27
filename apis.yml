@@ -84,9 +84,9 @@ apis:
         url: https://docs.osaas.io
       - type: Authentication
         url: https://docs.osaas.io/osaas-api-docs/docs/index.html
-      - type: SDK
+      - type: SDKs
         url: https://github.com/EyevinnOSC/client-ts
-      - type: SDK
+      - type: SDKs
         url: https://github.com/EyevinnOSC/client-go
       - type: CLI
         url: https://www.npmjs.com/package/@osaas/cli
@@ -188,7 +188,7 @@ apis:
     properties:
       - type: GitHubRepository
         url: https://github.com/Eyevinn/player-analytics-specification
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Eyevinn/player-analytics-client-sdk-web
     x-features:
       - Open Player Analytics Event Schema
@@ -310,7 +310,7 @@ common:
     url: https://app.osaas.io/
   - type: Console
     url: https://app.se.osaas.io/
-  - type: SignUp
+  - type: Signup
     url: https://app.osaas.io/
   - type: Login
     url: https://app.osaas.io/
@@ -336,9 +336,9 @@ common:
     url: mailto:osc@eyevinn.se
   - type: ContactEmail
     url: mailto:info@eyevinn.se
-  - type: SDK
+  - type: SDKs
     url: https://github.com/EyevinnOSC/client-ts
-  - type: SDK
+  - type: SDKs
     url: https://github.com/EyevinnOSC/client-go
   - type: CLI
     url: https://www.npmjs.com/package/@osaas/cli
@@ -352,7 +352,7 @@ common:
     url: https://github.com/EyevinnOSC/vscode-chat-extension
   - type: Examples
     url: https://github.com/EyevinnOSC/solutions
-  - type: Onboarding
+  - type: GettingStarted
     url: https://github.com/EyevinnOSC/onboarding
   - type: Features
     data:
