@@ -1,0 +1,32 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.eyevinn.se
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  7 23:59:59 2026 GMT
+  hsts: false
+- host: docs.osaas.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 22 23:59:59 2026 GMT
+  hsts: false
+- host: api.osaas.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 25 23:59:59 2026 GMT
+  hsts: false
+domains:
+- domain: eyevinn.se
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: osaas.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

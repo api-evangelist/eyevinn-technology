@@ -298,6 +298,8 @@ apis:
       - Prototype MoQ-based live distribution
       - Test MoQ interop against a reference publisher
 common:
+  - type: DomainSecurity
+    url: security/eyevinn-technology-domain-security.yml
   - type: Website
     url: https://www.eyevinn.se/
   - type: ProductWebsite
