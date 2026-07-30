@@ -16,9 +16,20 @@ description: >-
   positioning OSC as a "Builder Economy" distribution channel for open source
   rather than a vendor-lock-in PaaS.
 type: Index
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eyevinn-technology.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/eyevinn-technology/refs/heads/main/apis.yml
 created: '2026-05-25'
