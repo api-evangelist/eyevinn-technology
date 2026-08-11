@@ -309,6 +309,12 @@ apis:
       - Prototype MoQ-based live distribution
       - Test MoQ interop against a reference publisher
 common:
+  - type: IssueTracker
+    url: https://github.com/Eyevinn/channel-engine/issues
+  - type: Releases
+    url: https://github.com/Eyevinn/channel-engine/releases
+  - type: ContributionGuide
+    url: https://github.com/Eyevinn/channel-engine/blob/master/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/eyevinn-technology-domain-security.yml
   - type: Website
