@@ -282,6 +282,11 @@ apis:
     humanURL: https://github.com/Eyevinn/srt-whep
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
+      - CONTRIBUTION
+      - SRT
+      - WebRTC
+      - WHEP
+    tags_raw:
       - Contribution
       - SRT
       - WebRTC
