@@ -1,0 +1,33 @@
+# Front Door AI Index — eyevinn-technology — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: eyevinn-technology
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.eyevinn.se
+  final_host: www.eyevinn.se
+  ownership: own
+  owner: eyevinn-technology
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 39
+  host_score: 39
+  density: 12.41
+  words: 3142
+  tiers:
+    agentic: 5
+    core: 26
+    model: 8
+  ambiguous: 3
+  top_terms:
+    AI: 26
+    Claude: 7
+    MCP: 2
+    automation: 2
+    AI agent: 1
+    ChatGPT: 1
+    agent: 1
+    agentic: 1
+    model context protocol: 1
