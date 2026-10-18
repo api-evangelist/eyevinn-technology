@@ -61,7 +61,7 @@ tags:
   - Channel Engine
   - CMAF
   - DASH
-  - FAST Channels
+  - FAST
   - FFmpeg
   - HLS
   - Live Streaming
@@ -183,6 +183,12 @@ apis:
     humanURL: https://github.com/Eyevinn/channel-engine
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
+      - Channel Engine
+      - FAST
+      - HLS
+      - Linear TV
+      - VOD2Live
+    tags_raw:
       - Channel Engine
       - FAST Channels
       - HLS
