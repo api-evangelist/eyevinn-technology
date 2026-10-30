@@ -1,4 +1,4 @@
-# Eyevinn Technology (eyevinn-technology)
+# Eyevinn Technology
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,170 +66,104 @@
 
 Eyevinn Technology is a Stockholm, Sweden based video streaming consultancy and open source company specializing in cloud-native video infrastructure, HLS and MPEG-DASH packaging, FAST channels, WebRTC ingest (WHIP/WHEP), server-side ad insertion (SSAI), broadcast intercom, and player analytics. The company operates one of the largest video-focused open source portfolios on GitHub (300+ repositories across the Eyevinn and EyevinnOSC orgs) and runs Eyevinn Open Source Cloud (OSC), a managed multi-tenant SaaS platform that packages 180+ open source projects (databases, media tools, developer tools, AI runtimes, productivity apps) into one-click deployments with a token-based consumption model, a Personal Access Token (PAT) authenticated REST API, and client SDKs for TypeScript, Go, and Terraform. Eyevinn shares OSC revenue with the maintainers of the open source projects hosted on the platform, positioning OSC as a "Builder Economy" distribution channel for open source rather than a vendor-lock-in PaaS.
 
-**URL:** [Visit APIs.yml URL](https://raw.githubusercontent.com/api-evangelist/eyevinn-technology/refs/heads/main/apis.yml)
+**Areas:** Ad Insertion · Broadcast Intercom · Channel Engine · CMAF · DASH · FAST · FFmpeg · HLS · Live Streaming · Media Over QUIC · Open Source · Open Source Cloud
 
-## Scope
+## Eyevinn Technology on APIs.io
 
-- **Type:** Index
-- **Kind:** opensource
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Eyevinn Technology is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/eyevinn-technology/](https://apis.io/providers/eyevinn-technology/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- Ad Insertion
-- Broadcast Intercom
-- Channel Engine
-- CMAF
-- DASH
-- FAST Channels
-- FFmpeg
-- HLS
-- Live Streaming
-- Media Over QUIC
-- Open Source
-- Open Source Cloud
-- OSC
-- Player Analytics
-- REST
-- SRT
-- SSAI
-- Sweden
-- Transcoding
-- Video Infrastructure
-- VOD2Live
-- WebRTC
-- WHEP
-- WHIP
+- [Eyevinn Open Source Cloud REST API](https://apis.io/apis/eyevinn-technology/osc-rest-api/) — The Eyevinn Open Source Cloud (OSC) REST API is the management plane for provisioning and operating service instances on the OSC platform. The API uses…
+- [Eyevinn Channel Engine](https://apis.io/apis/eyevinn-technology/channel-engine/) — Channel Engine is an open source JavaScript/TypeScript library for producing 24/7 HLS FAST (Free Ad-Supported Streaming Television) linear channels from…
+- [Eyevinn WHIP and WHEP Modules](https://apis.io/apis/eyevinn-technology/whip-whep/) — Open source TypeScript implementations of the IETF WebRTC HTTP Ingestion Protocol (WHIP) and WebRTC HTTP Egress Protocol (WHEP). Used to ingest and…
+- [Eyevinn Player Analytics Specification (EPAS)](https://apis.io/apis/eyevinn-technology/player-analytics/) — EPAS is an open specification and SDK suite for collecting video player analytics in real time across web and native players. Eyevinn maintains the client…
+- [Eyevinn Open Intercom](https://apis.io/apis/eyevinn-technology/intercom/) — Open Intercom is a low-latency, web-based VoIP broadcast intercom system built on WebRTC. It is composed of `intercom-manager` (the server and management…
+- [Eyevinn SRT to WHEP Bridge](https://apis.io/apis/eyevinn-technology/srt-whep/) — A Rust service that ingests SRT (Secure Reliable Transport) contribution feeds and re-publishes them as WebRTC playback streams via WHEP, enabling…
+- [Eyevinn Media Supply Orchestrator](https://apis.io/apis/eyevinn-technology/media-supply-orchestrator/) — Open source TypeScript framework for orchestrating media supply chain workflows — ingest, transcoding, packaging, QC, and distribution — across cloud-native…
+- [Eyevinn Media Over QUIC (MoQ) Tools](https://apis.io/apis/eyevinn-technology/moq-tools/) — A suite of experimental tools tracking the IETF Media Over QUIC working group, including `moqlivemock` (a Go publisher simulator) and `warp-player` (a CMAF…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (2)
 
-### Eyevinn Open Source Cloud REST API
+Model Context Protocol servers that expose the API to agents.
 
-Management plane for provisioning and operating service instances on the OSC platform. PAT-authenticated, mints short-lived per-service Service Access Tokens (SATs).
+- [eyevinn-technology](https://apis.io/servers/eyevinn-technology/eyevinn-technology/)
+- [mcp-server](https://apis.io/servers/eyevinn-technology/mcp-server/)
 
-- **Human URL:** [https://docs.osaas.io/osaas-api-docs/docs/index.html](https://docs.osaas.io/osaas-api-docs/docs/index.html)
-- **Base URL:** `https://api.osaas.io`
-- **Auth:** `x-pat-jwt: Bearer <PAT>` to obtain SATs from `https://token.svc.prod.osaas.io/servicetoken`
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://docs.osaas.io/osaas-api-docs/docs/index.html)
-- [APIReference](https://docs.osaas.io/osaas-api-docs/docs/index.html)
-- [GettingStarted](https://docs.osaas.io)
-- [SDK (TypeScript)](https://github.com/EyevinnOSC/client-ts)
-- [SDK (Go)](https://github.com/EyevinnOSC/client-go)
-- [CLI](https://www.npmjs.com/package/@osaas/cli)
-- [Terraform Provider](https://github.com/EyevinnOSC/terraform-provider-osc)
-- [GitHub Action](https://github.com/EyevinnOSC/action)
-- [MCP Server](https://github.com/EyevinnOSC/mcp-server)
+- [Eyevinn Technology Domain Security](https://apis.io/security/eyevinn-technology/eyevinn-technology-domain-security/)
 
-### Eyevinn Channel Engine
+## Where to find this API
 
-24/7 HLS FAST channel engine using VOD2Live technology. Apache-2.0, JavaScript/TypeScript.
-
-- [GitHub Repository](https://github.com/Eyevinn/channel-engine)
-
-### Eyevinn WHIP and WHEP Modules
-
-Open source TypeScript implementations of the IETF WHIP and WHEP WebRTC HTTP signaling protocols.
-
-- [GitHub Repository](https://github.com/Eyevinn/whip)
-
-### Eyevinn Player Analytics Specification (EPAS)
-
-Open spec and SDK suite for collecting vendor-neutral video player analytics in real time.
-
-- [GitHub Repository](https://github.com/Eyevinn/player-analytics-specification)
-- [Web SDK](https://github.com/Eyevinn/player-analytics-client-sdk-web)
-
-### Eyevinn Open Intercom
-
-Browser-based WebRTC broadcast intercom — `intercom-manager` (server) + `intercom-frontend` (client).
-
-- [Intercom Manager](https://github.com/Eyevinn/intercom-manager)
-- [Intercom Frontend](https://github.com/Eyevinn/intercom-frontend)
-
-### Eyevinn SRT to WHEP Bridge
-
-Rust service that ingests SRT contribution feeds and re-publishes them as WHEP-playable WebRTC streams.
-
-- [GitHub Repository](https://github.com/Eyevinn/srt-whep)
-
-### Eyevinn Media Supply Orchestrator
-
-TypeScript framework for orchestrating media supply chain workflows across cloud-native components, pairing with the OSC catalog.
-
-- [GitHub Repository](https://github.com/Eyevinn/media-supply-orchestrator)
-
-### Eyevinn Media Over QUIC (MoQ) Tools
-
-Experimental tools tracking the IETF Media Over QUIC working group: `moqlivemock` publisher simulator and `warp-player` CMAF media player.
-
-- [moqlivemock](https://github.com/Eyevinn/moqlivemock)
-- [warp-player](https://github.com/Eyevinn/warp-player)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.eyevinn.se/)
-- [Product Website (OSC)](https://www.osaas.io/)
 - [Documentation](https://docs.osaas.io/)
-- [API Reference](https://docs.osaas.io/osaas-api-docs/docs/index.html)
-- [Console (US)](https://app.osaas.io/)
-- [Console (SE)](https://app.se.osaas.io/)
-- [Service Catalog](https://www.osaas.io/catalog)
+- [Getting started](https://github.com/EyevinnOSC/onboarding)
+- [API reference](https://docs.osaas.io/osaas-api-docs/docs/index.html)
 - [Pricing](https://www.osaas.io/pricing)
-- [Status Page](https://app.osaas.io/status)
-- [GitHub (Eyevinn)](https://github.com/Eyevinn)
-- [GitHub (EyevinnOSC)](https://github.com/EyevinnOSC)
-- [Slack](https://slack.osaas.io)
-- [Community Discussions](https://github.com/EyevinnOSC/community/discussions)
-- [Blog (Medium)](https://eyevinntechnology.medium.com/)
-- [Developer Blog (dev.to/video)](https://dev.to/video)
-- [Contact: info@eyevinn.se](mailto:info@eyevinn.se)
-- [OSC Contact: osc@eyevinn.se](mailto:osc@eyevinn.se)
+- [Blog](https://eyevinntechnology.medium.com/)
+- [GitHub](https://github.com/EyevinnOSC)
+- [Status](https://app.osaas.io/status)
 
-## Features
+## API Evangelist rating
 
-- Builder Economy Consultancy
-- Open Source Cloud (OSC) with 180+ services
-- Personal Access Token API with per-service SATs
-- Polyglot Client SDKs (TypeScript, Go)
-- Terraform Provider and GitHub Action
-- Model Context Protocol Server for AI agents
-- Revenue Sharing With Open Source Maintainers
-- FAST Channel Engine (VOD2Live)
-- WebRTC Contribution and Distribution (WHIP/WHEP, SRT bridge)
-- Open Player Analytics Specification (EPAS)
-- Media Over QUIC Tooling
+**Kin Score 30.5** — thin · rubric 0.25.0 · scored 2026-10-23
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 65.0 |
+| Contract quality | 6.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 78.6 |
+| Access clarity | 23.7 |
 
-- Linear FAST Channel Production
-- Low-Latency WebRTC Distribution
-- Browser-Based Broadcast Intercom
-- Managed Open Source PaaS
-- AI Agent Driven DevOps
-- Vendor-Neutral Player Analytics
-- Media Supply Chain Orchestration
+**Agent readiness 28.6** — agent-ready
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
-Terraform, GitHub Actions, Model Context Protocol, VS Code Copilot Chat, FFmpeg, Shaka Packager, Owncast, PostgreSQL, Redis / Valkey, ClickHouse, n8n, Grafana, Gitea, Nextcloud.
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
 
-## Solutions
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/eyevinn-technology/](https://apis.io/providers/eyevinn-technology/).
 
-- Streaming Engineering Services
-- Open Source Cloud Subscription (Basic free / Personal EUR 15/mo / Professional EUR 69/mo)
-- Liivo No-Code AI App Deployment
+## How this profile is made
 
-## Maintainers
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-**FN:** Kin Lane
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Eyevinn Technology: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**Email:** kin@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/eyevinn-technology/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
